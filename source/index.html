@@ -1,12 +1,157 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page-body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Меню бургер"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+      <section class="main-screen">
+        <div class="main-screen__welcome-text">
+          <img src="img/text-welcome.svg" alt="Приветственный текст">
+        </div>
+        <div class="main-screen__description description-text">
+          <p class="description-text__heading">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </p>
+          <p class="description-text__content">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
+          </p>
+        </div>
+      </section>
+      <section class="first-fact">
+        <div class="fact fact--colored">
+          <p class="fact__heading">
+            Настоящий городок
+          </p>
+          <span class="fact__number">- №1 -</span>
+          <p class="fact__content">
+            Седона не атракцион для туристов, там течет своя жизнь
+          </p>
+          <img class="fact__img" src="img/photo-city.jpg" alt="Фото города">
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <span class="advantages__heading">Жилье</span>
+            <p class="advantages__content">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__heading">Сувениры</span>
+            <p class="advantages__content">
+              Не только китайского, но и местного производства!
+            </p>
+          </li>
+          <li class="advantages__item">
+            <span class="advantages__heading">Еда</span>
+            <p class="advantages__content">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="second-fact">
+        <div class="fact fact--colored">
+          <h3 class="fact__heading">
+            Там есть мост дьявола
+          </h3>
+          <span class="fact__number">- №2 -</span>
+          <p class="fact__content">
+            Да! По нему можно пройти! Если вы осмелитесь, конечно
+          </p>
+          <img class="fact__img" src="img/photo-bridge.jpg" alt="Фото моста">
+        </div>
+      </section>
+      <section class="facts">
+        <ul class="facts__list">
+          <li class="facts__item fact">
+            <p class="fact__heading">
+              Небольшая площадь
+            </p>
+            <span class="fact__number">- №3 -</span>
+            <p class="fact__content">
+              Все интересные места находятся очень близко
+            </p>
+          </li>
+          <li class="facts__item fact">
+            <p class="fact__heading">
+              Красивая дорога
+            </p>
+            <span class="fact__number">- №4 -</span>
+            <p class="fact__content">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </li>
+          <li class="facts__item fact">
+            <p class="fact__heading">
+              Мало туристов
+            </p>
+            <span class="fact__number">- №5 -</span>
+            <p class="fact__content">
+              Большинство едет в Гранд каньон и толпится там
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="hotel-search">
+        <div class="hotel-search__description description-text">
+          <p class="description-text__heading">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </p>
+          <p class="description-text__content">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
+          </p>
+        </div>
+        <a class="hotel-search__button" href="#" aria-label="Найти гостиницу">Найти гостиницу</a>
+      </section>
+      <section class="map">
+        <img class="map__ing" src="img/map.png" alt="Изображение карты">
+        <img class="map__marker" src="img/map-marker.svg" alt="Маркер карты">
+      </section>
+    </main>
+    <footer class="page-footer">
+      <span class="hashtag">#visitsedona</span>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__button" href="#">Twitter</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__button" href="#">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__button" href="#">Youtube</a>
+        </li>
+      </ul>
+      <a class="developer" href="https://up.htmlacademy.ru" aria-label="Ссылка на Академию">Разработано</a>
+    </footer>
   </body>
 </html>
