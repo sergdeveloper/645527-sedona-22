@@ -1,3 +1,21 @@
+.fact {
+  background-color: @special-grey;
+
+  &--colored {
+    color: @basic-white;
+    background-color: @light-blue;
+    outline: 2px solid red;
+
+    p {
+      color: @basic-white;
+    }
+
+    span {
+      color: @basic-white;
+    }
+  }
+}
+
 .fact__heading {
   font-size: 18px;
   line-height: 26px;
@@ -10,13 +28,4 @@
 
 .fact__number {
   color: @dark-black;
-}
-
-.fact--colored {
-  background-color: @light-blue;
-}
-
-.fact--colored p,
-.fact--colored span {
-  color: @basic-white;
 }
