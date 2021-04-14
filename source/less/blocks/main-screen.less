@@ -1,8 +1,31 @@
 .main-screen {
-  outline: 2px solid red;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: bottom, center top;
+  height: 390px;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    background-image: url("../img/back-desktop.jpg");
+  }
 }
 
 .main-screen__welcome-text {
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 90px;
+
+  img {
+    @media (min-width: @tablet-width) {
+      width: 416px;
+    }
+  }
+}
+
+.main-screen__description {
+  margin-top: 100px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 155px;
+  }
 }

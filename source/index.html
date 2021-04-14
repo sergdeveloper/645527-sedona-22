@@ -7,11 +7,8 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Меню бургер"></button>
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__toggle" type="button" aria-label="Закрыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__menu-list">
             <li class="main-nav__item">
@@ -19,6 +16,9 @@
             </li>
             <li class="main-nav__item">
               <a href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item main-nav__placeholder">
+              <a href="catalog.html"></a>
             </li>
             <li class="main-nav__item">
               <a href="form.html">Форма отзыва</a>
@@ -29,12 +29,18 @@
           </ul>
         </div>
       </nav>
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип">
+      </a>
+      <div class="page-header__menu-bar">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
       <section class="main-screen">
         <div class="main-screen__welcome-text">
-          <img src="img/text-welcome.svg" alt="Приветственный текст">
+          <img src="img/text-welcome.svg" width="281" height="214" alt="Приветственный текст">
         </div>
         <div class="main-screen__description description-text">
           <p class="description-text__heading">
@@ -47,14 +53,16 @@
       </section>
       <section class="single-fact">
         <div class="fact fact--colored">
-          <p class="fact__heading">
-            Настоящий городок
-          </p>
-          <span class="fact__number">- №1 -</span>
-          <p class="fact__content">
-            Седона не атракцион для туристов, там течет своя жизнь
-          </p>
-          <img class="fact__img" src="img/photo-city.jpg" alt="Фото города">
+          <div class="fact__info">
+            <p class="fact__heading">
+              Настоящий городок
+            </p>
+            <span class="fact__number">- №1 -</span>
+            <p class="fact__content">
+              Седона не атракцион для туристов, там течет своя жизнь
+            </p>
+          </div>
+          <img class="fact__image" width="520" height="260" src="img/photo-city.jpg" alt="Фото города">
         </div>
       </section>
       <section class="advantages">
@@ -80,28 +88,32 @@
           </li>
         </ul>
       </section>
-      <section class="single-fact">
-        <div class="fact fact--colored">
-          <p class="fact__heading">
-            Там есть мост дьявола
-          </p>
-          <span class="fact__number">- №2 -</span>
-          <p class="fact__content">
-            Да! По нему можно пройти! Если вы осмелитесь, конечно
-          </p>
-          <img class="fact__img" src="img/photo-bridge.jpg" alt="Фото моста">
+      <section class="single-fact single-fact--second">
+        <div class="fact fact--colored fact--reverse">
+          <div class="fact__info">
+            <p class="fact__heading">
+              Там есть мост дьявола
+            </p>
+            <span class="fact__number">- №2 -</span>
+            <p class="fact__content">
+              Да! По нему можно пройти! Если вы осмелитесь, конечно
+            </p>
+          </div>
+          <img class="fact__img" src="img/photo-bridge.jpg" width="520" height="260" alt="Фото моста">
         </div>
       </section>
       <section class="facts">
         <ul class="facts__list">
           <li class="facts__item fact">
-            <p class="fact__heading">
-              Небольшая площадь
-            </p>
-            <span class="fact__number">- №3 -</span>
-            <p class="fact__content">
-              Все интересные места находятся очень близко
-            </p>
+            <div class="fact__info">
+              <p class="fact__heading">
+                Небольшая площадь
+              </p>
+              <span class="fact__number">- №3 -</span>
+              <p class="fact__content">
+                Все интересные места находятся очень близко
+              </p>
+            </div>
           </li>
           <li class="facts__item fact">
             <p class="fact__heading">
@@ -113,13 +125,15 @@
             </p>
           </li>
           <li class="facts__item fact">
-            <p class="fact__heading">
-              Мало туристов
-            </p>
-            <span class="fact__number">- №5 -</span>
-            <p class="fact__content">
-              Большинство едет в Гранд каньон и толпится там
-            </p>
+            <div class="fact__info">
+              <p class="fact__heading">
+                Мало туристов
+              </p>
+              <span class="fact__number">- №5 -</span>
+              <p class="fact__content">
+                Большинство едет в Гранд каньон и толпится там
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -135,8 +149,7 @@
         <a class="hotel-search__button button" href="#" aria-label="Найти гостиницу">Найти гостиницу</a>
       </section>
       <section class="map">
-        <img class="map__ing" src="img/map.png" alt="Изображение карты">
-        <img class="map__marker" src="img/map-marker.svg" alt="Маркер карты">
+        <img class="map__img" src="img/map.png" width="320" height="250" alt="Изображение карты">
       </section>
     </main>
     <footer class="page-footer">

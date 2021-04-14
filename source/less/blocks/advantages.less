@@ -1,5 +1,12 @@
 .advantages {
-  outline: 2px solid red;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .advantages__heading {
@@ -14,4 +21,16 @@
 
 .advantages__list {
   .clear-list;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.advantages__item {
+  padding: 45px 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
