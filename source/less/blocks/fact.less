@@ -1,18 +1,53 @@
 .fact {
+  text-align: center;
   background-color: @special-grey;
 
   &--colored {
     color: @basic-white;
     background-color: @light-blue;
-    outline: 2px solid red;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
 
     p {
       color: @basic-white;
+      margin: 0;
     }
 
     span {
       color: @basic-white;
     }
+
+    img {
+      display: block;
+      height: 260px;
+      width: 100%;
+
+      @media (min-width: @desktop-width) {
+        width: 800px;
+      }
+    }
+  }
+
+  &--reverse {
+    @media (min-width: @tablet-width) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.fact__info {
+  padding: 45px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 25px 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 75px 70px;
   }
 }
 

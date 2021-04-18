@@ -1,8 +1,11 @@
 .facts {
-  outline: 2px solid red;
   background-color: @special-grey;
 }
 
 .facts__list {
   .clear-list;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
