@@ -9,6 +9,14 @@
     height: 518px;
     background-image: url("../img/back-desktop.jpg");
   }
+
+  &--form {
+    height: 160px;
+
+    @media (min-width: @tablet-width) {
+      height: 290px;
+    }
+  }
 }
 
 .main-screen__welcome-text {
@@ -27,5 +35,20 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 155px;
+  }
+}
+
+.main-screen__sedona-text {
+  text-align: center;
+  padding-top: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 100px;
+  }
+
+  img {
+    @media (min-width: @tablet-width) {
+      width: 460px;
+    }
   }
 }
