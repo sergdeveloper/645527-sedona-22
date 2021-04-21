@@ -5,6 +5,10 @@
   &--colored {
     color: @basic-white;
     background-color: @light-blue;
+    background-image: url("../img/reverse-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: right -4px;
+    background-size: contain;
 
     @media (min-width: @tablet-width) {
       display: flex;
@@ -12,7 +16,6 @@
 
     p {
       color: @basic-white;
-      margin: 0;
     }
 
     span {
@@ -38,7 +41,8 @@
 }
 
 .fact__info {
-  padding: 45px 20px;
+  padding-top: 69px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     width: 256px;
@@ -55,12 +59,17 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-top: -3px;
+  margin-bottom: 12px;
+
 }
 
 .fact__content {
   color: @dark-black;
+  margin-top: 16px;
 }
 
 .fact__number {
   color: @dark-black;
+  padding-top: 20px;
 }
