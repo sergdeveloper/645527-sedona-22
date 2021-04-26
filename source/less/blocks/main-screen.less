@@ -8,7 +8,11 @@
 
   @media (min-width: @tablet-width) {
     height: 518px;
-    background-image: url("../img/back-desktop.jpg");
+    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop.jpg");
   }
 
   &--form {
@@ -26,8 +30,12 @@
 
   img {
     @media (min-width: @tablet-width) {
-      width: 416px;
+      width: 461px;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
   }
 }
 
@@ -36,7 +44,7 @@
   padding-top: 14px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 155px;
+    margin-top: 116px;
   }
 }
 

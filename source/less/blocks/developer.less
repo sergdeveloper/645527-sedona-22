@@ -1,12 +1,30 @@
 .developer {
   display: block;
-  margin: 0 auto;
+  position: relative;
   text-decoration: none;
   line-height: 26px;
   color: @basic-black;
-  width: 121px;
+  margin-top: 44px;
+  margin-left: 96px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    margin-bottom: 27px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/htmlacademy-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 27px;
+    height: 34px;
+    right: 95px;
+    bottom: -4px;
+
+    @media (min-width: @tablet-width) {
+      right: -39px;
+    }
   }
 }
