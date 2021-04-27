@@ -1,19 +1,5 @@
 .feedback {
-  margin-top: 200px;
-
-  span {
-    line-height: 26px;
-  }
-
-  input {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-
-    &::placeholder {
-      color: @basic-black;
-    }
-  }
+  margin-top: 204px;
 
   textarea {
     font-size: 18px;
@@ -58,28 +44,65 @@
     margin: 0 auto;
   }
 
-  legend {
-    margin: 20px auto;
-    text-align: center;
-  }
-
-  input {
-    padding: 15px;
-    background-color: @light-grey;
-    width: 100%;
-    border: none;
-  }
-
   label {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    width: 280px;
+    width: 288px;
+  }
+}
+
+.feedback__border-wrapper {
+  border-top: 1px solid @basic-grey;
+  padding-top: 19px;
+
+  &--contacts {
+    padding-top: 13px;
+  }
+}
+
+.feedback__fieldname {
+  line-height: 26px;
+  margin-right: 15px;
+  margin-top: 6px;
+  margin-left: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 70px;
+    width: 528px;
   }
 
-  span {
-    margin-right: 15px;
-    margin-bottom: 8px;
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    width: 290px;
+  }
+
+  &--phone {
+    margin-right: 91px;
+    margin-bottom: 7px;
+  }
+
+  &--mail {
+    margin-right: 108px;
+  }
+}
+
+.feedback__field {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  padding: 20px 0 14px 22px;
+  background-color: @light-grey;
+  width: 100%;
+  border: none;
+  font-family: "Pt sans", "Arial", sans-serif;
+
+  &::placeholder {
+    color: @basic-black;
+  }
+
+  &--contacts {
+    padding: 20px 0 14px 32px;
   }
 }
 
@@ -92,25 +115,12 @@
 .feedback__contacts {
   label {
     flex-direction: column;
+    margin-bottom: 9px;
   }
 
   input {
     @media (min-width: @tablet-width) {
       width: 648px;
-    }
-  }
-
-  span {
-    margin-right: 80px;
-
-    @media (min-width: @tablet-width) {
-      margin-right: 70px;
-      width: 528px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-right: 0;
-      width: 290px;
     }
   }
 
@@ -121,6 +131,39 @@
       flex-direction: row;
       flex-wrap: nowrap;
       width: 445px;
+    }
+  }
+}
+
+.feedback__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 12px auto;
+  text-align: center;
+
+  &--contacts {
+    margin-bottom: 5px;
+  }
+}
+
+.feedback__input-text {
+  &--phone {
+    position: relative;
+    width: 280px;
+    margin-left: 9px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: @icon-grey;
+      background-image: url("../img/phone.svg");
+      background-repeat: no-repeat;
+      background-position: 20px 20px;
+      width: 58px;
+      height: 58px;
+      right: 7px;
+      bottom: 0;
     }
   }
 }
