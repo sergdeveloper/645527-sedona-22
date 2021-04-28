@@ -1,9 +1,26 @@
 .button {
+  display: block;
   font-size: 21px;
   line-height: 26px;
   text-decoration: none;
   font-weight: 700;
   background-color: @light-blue;
   color: @basic-white;
+  padding: 12px 32px 19px;
+  margin: 0 auto;
+  text-align: center;
   width: 280px;
+
+  &:hover {
+    background-color: @basic-blue;
+  }
+
+  &:active {
+    background-color: @dark-blue;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: @basic-grey;
+  }
 }

@@ -2,24 +2,155 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__content {
   color: @dark-black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+    margin-left: 11px;
+  }
+
+  &--house {
+    @media (min-width: @desktop-width) {
+      margin-left: 48px;
+      margin-right: 51px;
+    }
+  }
+
+  &--gift {
+    @media (min-width: @desktop-width) {
+      margin-left: 98px;
+      margin-right: 65px;
+    }
+  }
+
+  &--food {
+    @media (min-width: @desktop-width) {
+      margin-right: 28px;
+      margin-left: 31px;
+    }
+  }
 }
 
 .advantages__list {
   .clear-list;
+  padding-top: 35px;
+  margin-bottom: 37px;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
+    padding-top: 158px;
+    margin-bottom: 18px;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
   }
 }
 
 .advantages__item {
-  padding: 45px 20px;
+  position: relative;
+  padding-left: 69px;
+  padding-right: 24px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     text-align: center;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    width: 400px;
+    padding-left: 19px;
+  }
+
+  &:first-child::before {
+    position: absolute;
+    content: "";
+    width: 39px;
+    height: 37px;
+    top: -8px;
+    left: 21px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-house-big.svg");
+      width: 75px;
+      height: 72px;
+      top: -98px;
+      left: 90px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 161px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+  }
+
+  &:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 38px;
+    top: -10px;
+    left: 24px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-gift-big.svg");
+      width: 76px;
+      height: 75px;
+      top: -101px;
+      left: 77px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 167px;
+    }
+  }
+
+  &:last-child::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 35px;
+    top: -4px;
+    left: 19px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: @tablet-width) {
+      background-image: url("../img/icon-burger-big.svg");
+      width: 76px;
+      height: 75px;
+      top: -95px;
+      left: 83px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 161px;
+    }
   }
 }
