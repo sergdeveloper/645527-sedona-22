@@ -19,10 +19,14 @@
     height: 157px;
     background-position: center bottom, bottom;
     background-size: auto auto;
-    margin-top: 0px;
+    margin-top: 0;
 
     @media (min-width: @tablet-width) {
       height: 290px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 302px;
     }
   }
 }
@@ -52,6 +56,14 @@
 
   &--form {
     margin-top: 84px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 153px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 207px;
+    }
   }
 }
 

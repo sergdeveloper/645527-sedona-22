@@ -65,7 +65,7 @@
         </section>
         <section class="feedback">
           <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="feedback__border-wrapper">
+            <div class="feedback__border-wrapper feedback__border-wrapper--personal">
               <fieldset class="feedback__personal">
                 <legend class="feedback__title feedback__title--personal">Представьтесь:</legend>
                 <label class="feedback__input-text input-text">
@@ -84,16 +84,17 @@
             </div>
             <div class="feedback__border-wrapper feedback__border-wrapper--contacts">
               <fieldset class="feedback__contacts">
-                <legend class="feedback__title feedback__title--contacts">Контактная информация:</legend>
+                <legend class="feedback__title feedback__title--contacts feedback__lines feedback__lines--contact">Контактная информация:</legend>
                 <div class="feedback__container-contacts">
                   <div class="feedback__container-item">
                     <label class="feedback__input-text feedback__input-text--phone input-text">
                       <span class=" feedback__fieldname feedback__fieldname--phone">Контактный телефон*:</span>
+                      <span class=" feedback__fieldname feedback__fieldname--phone feedback__fieldname--phone-desktop">Телефон*:</span>
                       <input class="feedback__field feedback__field--contacts" type="text" name="phone" placeholder="Введите телефон">
                     </label>
                   </div>
                   <div class="feedback__container-contacts__item">
-                    <label class="feedback__input-text feedback__input-text--phone input-text">
+                    <label class="feedback__input-text feedback__input-text--mail input-text">
                       <span class=" feedback__fieldname feedback__fieldname--mail">Электронная почта*:</span>
                       <input class="feedback__field feedback__field--contacts" type="text" name="mail" placeholder="Введите e-mail">
                     </label>
@@ -101,56 +102,63 @@
                 </div>
               </fieldset>
             </div>
-            <div class="feedback__border-wrapper">
+            <div class="feedback__border-wrapper feedback__border-wrapper--emotion">
               <fieldset class="feedback__emotion">
-                <legend class="feedback__title feedback__title--emotion">Ваше общее впечатление:</legend>
-                <label class="feedback__choice choice">
-                  <input class="feedback__field" type="radio" name="emote" value="good" checked>
+                <legend class="feedback__title feedback__title--emotion feedback__vertical-lines">Ваше общее впечатление:</legend>
+                <label class="feedback__choice choice" for="good">
+                  <input class="feedback__field feedback__field--radiobutton" type="radio" name="emote" id="good" value="first" checked>
+                  <span class="feedback__control feedback__control--radio"></span>
                   <span class="feedback__fieldname">Скорее положительное</span>
                 </label>
-                <label class="feedback__choice choice">
-                  <input class="feedback__field" type="radio" name="emote" value="bad">
+                <label class="feedback__choice choice" for="bad">
+                  <input class="feedback__field feedback__field--radiobutton" type="radio" name="emote" id="bad" value="secondt">
+                  <span class="feedback__control feedback__control--radio"></span>
                   <span class="feedback__fieldname">Скорее отрицательное</span>
                 </label>
-                <label class="feedback__choice choice">
-                  <input class="feedback__field" type="radio" name="emote" value="neutral">
+                <label class="feedback__choice choice" for="neutral">
+                  <input class="feedback__field feedback__field--radiobutton" type="radio" name="emote" id="neutral" value="third">
+                  <span class="feedback__control feedback__control--radio"></span>
                   <span class="feedback__fieldname">Затрудняюсь ответить</span>
                 </label>
               </fieldset>
             </div>
-            <div class="feedback__border-wrapper">
+            <div class="feedback__border-wrapper feedback__border-wrapper--visited">
               <fieldset class="feedback__visited">
-                <legend class="feedback__title feedback__title--visited">Посещенные достопримечательности:</legend>
+                <legend class="feedback__title feedback__title--visited feedback__lines feedback__lines--visit">Посещенные достопримечательности:</legend>
                 <div class="feedback__visited-wrapper">
-                  <label class="feedback__choice choice choice--check">
-                    <input type="checkbox" name="place" value="bridge" checked>
-                    <span class="feedback__fieldname">Мост Дьявола</span>
+                  <label class="feedback__choice feedback__choice--check choice">
+                    <input class="feedback__fiel feedback__field--check" type="checkbox" name="place" value="bridge" checked>
+                    <span class="feedback__control feedback__control--check"></span>
+                    <span class="feedback__fieldname feedback__fieldname--visited">Мост Дьявола</span>
                   </label>
-                  <label class="feedback__choice choice choice--check">
-                    <input type="checkbox" name="place" value="bell" checked>
-                    <span class="feedback__fieldname">Гора Колокол</span>
+                  <label class="feedback__choice feedback__choice--check choice">
+                    <input class="feedback__fiel feedback__field--check" type="checkbox" name="place" value="bell" checked>
+                    <span class="feedback__control feedback__control--check"></span>
+                    <span class="feedback__fieldname feedback__fieldname--visited">Гора Колокол</span>
                   </label>
-                  <label class="feedback__choice choice choice--check">
-                    <input type="checkbox" name="place" value="park" checked>
-                    <span class="feedback__fieldname">Слайд парк</span>
+                  <label class="feedback__choice feedback__choice--check choice">
+                    <input class="feedback__fiel feedback__field--check" type="checkbox" name="place" value="park" checked>
+                    <span class="feedback__control feedback__control--check"></span>
+                    <span class="feedback__fieldname feedback__fieldname--visited">Слайд парк</span>
                   </label>
-                  <label class="feedback__choice choice choice--check">
-                    <input type="checkbox" name="place" value="red-mount">
-                    <span class="feedback__fieldname">Красные скалы</span>
+                  <label class="feedback__choice feedback__choice--check choice">
+                    <input class="feedback__fiel feedback__field--check" type="checkbox" name="place" value="red-mount">
+                    <span class="feedback__control feedback__control--check"></span>
+                    <span class="feedback__fieldname feedback__fieldname--visited">Красные скалы</span>
                   </label>
                 </div>
               </fieldset>
             </div>
-            <div class="feedback__border-wrapper">
+            <div class="feedback__border-wrapper feedback__border-wrapper--review">
               <fieldset class="feedback__review">
-                <legend class="feedback__title feedback__title--review">Опишите свои эмоции:</legend>
-                <label class="feedback__input-text input-text input-text--area">
-                  <textarea name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
+                <legend class="feedback__title feedback__title--review feedback__lines feedback__lines--feedback">Опишите свои эмоции:</legend>
+                <label class="feedback__input-text feedback__input-text--area">
+                  <textarea class="feedback__textarea" name="opinion" placeholder="Опишите подробно все свои восторги"></textarea>
                 </label>
               </fieldset>
             </div>
             <div class="feedback__submit">
-              <button type="submit" class="feedback__button button" name="button">Отправить отзыв</button>
+              <button class="button" type="submit" class="feedback__button button" name="button">Отправить отзыв</button>
               <p class="feedback__required">* — обязательные поля</p>
             </div>
           </form>
@@ -183,6 +191,20 @@
         </ul>
         <a class="developer" href="https://up.htmlacademy.ru" aria-label="Ссылка на Академию">Разработано</a>
       </footer>
+      <section class="popup popup--fail">
+        <div class="description-text description-text--popup">
+          <p class="description-text__heading description-text__heading--popup description-text__heading--fail">Что-то пошло не так!</p>
+          <p class="description-text__content description-text__content--popup description-text__content--fail">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="button button--ok" type="button" name="button">Ок</button>
+      </section>
+      <section class="popup popup--success">
+        <div class="description-text description-text--popup">
+          <p class="description-text__heading description-text__heading--popup">Ваш отзыв отправлен!</p>
+          <p class="description-text__content description-text__content--popup">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <button class="button button--close-popup" type="button" name="button">Закрыть окно</button>
+      </section>
     </div>
   </body>
 </html>

@@ -3,13 +3,24 @@
   font-size: 21px;
   line-height: 26px;
   text-decoration: none;
+  text-transform: uppercase;
   font-weight: 700;
+  font-family: "Pt sans", "Arial", sans-serif;
   background-color: @light-blue;
   color: @basic-white;
-  padding: 12px 32px 19px;
+  padding: 15px 32px 15px 32px;
   margin: 0 auto;
   text-align: center;
   width: 280px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+  }
 
   &:hover {
     background-color: @basic-blue;
@@ -22,5 +33,19 @@
 
   &:disabled {
     background-color: @basic-grey;
+  }
+
+  &--ok {
+    width: 180px;
+    font-size: 18px;
+  }
+
+  &--close-popup {
+    font-size: 18px;
+    margin-top: 6%;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
   }
 }
