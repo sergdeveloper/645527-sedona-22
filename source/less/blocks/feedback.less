@@ -195,6 +195,15 @@
   &--check {
     .visually-hidden;
   }
+
+  &:hover {
+    background-color: @basic-grey;
+  }
+
+  &:focus {
+    background-color: @basic-white;
+    outline: 1px solid @basic-grey;
+  }
 }
 
 .feedback__personal {
@@ -308,7 +317,7 @@
     width: 436px;
   }
 
-  &--phone {
+  &--icon {
     position: relative;
     width: 280px;
     margin-left: 9px;
@@ -320,8 +329,8 @@
       background-image: url("../img/phone.svg");
       background-repeat: no-repeat;
       background-position: 20px 20px;
-      width: 58px;
-      height: 58px;
+      width: 60px;
+      height: 60px;
       right: 0;
       bottom: 0;
     }
@@ -337,25 +346,12 @@
   }
 
   &--mail {
-    position: relative;
-    width: 280px;
-    margin-left: 9px;
-
     &::after {
-      content: "";
-      position: absolute;
-      background-color: @icon-grey;
       background-image: url("../img/mail.svg");
-      background-repeat: no-repeat;
       background-position: 22px 22px;
-      width: 58px;
-      height: 58px;
-      right: 0;
-      bottom: 0;
     }
 
     @media (min-width: @tablet-width) {
-      width: 648px;
       margin: 22px 47px;
     }
 
@@ -431,8 +427,35 @@
   margin-right: 12px;
   background-color: @light-grey;
 
+  &:hover {
+    background-color: @basic-grey;
+  }
+
+  &:active {
+    background-color: @dark-grey;
+  }
+
+  &--toggle {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+
   &--radio {
     border-radius: 50%;
+
+    &::after {
+      width: 22px;
+      height: 22px;
+      background-color: @dark-black;
+      border-radius: 50%;
+    }
 
     @media (min-width: @tablet-width) {
       margin-right: -17px;
@@ -441,35 +464,22 @@
 
   &--check {
     margin-bottom: 10px;
+
+    &::after {
+      width: 24px;
+      height: 16px;
+      background-image: url("../img/tick.svg");
+      background-repeat: no-repeat;
+    }
   }
 }
 
-.feedback__field--radiobutton:checked + .feedback__control--radio::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 22px;
-  height: 22px;
-  margin-top: -11px;
-  margin-left: -11px;
-  background-color: #333333;
-  border-radius: 50%;
+.feedback__field--control:checked + .feedback__control--toggle::after {
+  opacity: 1;
 }
 
-.feedback__field--check:checked + .feedback__control--check::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 24px;
-  height: 16px;
-  margin-top: -8px;
-  margin-left: -12px;
-  background: url("../img/tick.svg");
-  background-repeat: no-repeat;
+.feedback__field + .feedback__control:active::after {
+  opacity: 0.3;
 }
 
 .feedback__visited-wrapper {
@@ -530,7 +540,6 @@
   }
 }
 
-
 .feedback__lines {
   @media (min-width: @tablet-width) {
     &::before {
@@ -540,7 +549,7 @@
       width: 123px;
       background: @grey-line;
       top: 50%;
-      left: -187px;
+      left: 181px;
     }
 
     &::after {
@@ -567,7 +576,6 @@
   }
 }
 
-
 .feedback__vertical-lines {
   @media (min-width: @tablet-width) {
     &::after {
@@ -579,7 +587,13 @@
       background-color: @grey-line;
       transform-origin: left;
       top: 0;
-      left: 403px;
+      left: 326px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      left: 402px;
     }
   }
 }
