@@ -31,6 +31,10 @@
   &--main {
     margin-left: 23px;
 
+    @media (min-width: @tablet-width) {
+      margin: 0 109px;
+    }
+
     @media (min-width: @desktop-width) {
       margin: 9px 294px;
     }
@@ -91,13 +95,21 @@
     margin: 21px 18px 29px 18px;
 
     @media (min-width: @tablet-width) {
-      margin-top: 33px;
-      margin-bottom: 38px;
+      margin: 32px 0 40px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 34px;
+      margin-top: 33px;
       margin-bottom: 44px;
+      margin-left: 164px;
+    }
+
+    br {
+      display: none;
+
+      @media (min-width: @tablet-width) {
+        display: block;
+      }
     }
   }
 

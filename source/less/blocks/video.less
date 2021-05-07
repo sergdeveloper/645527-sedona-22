@@ -174,3 +174,28 @@
     margin-top: 80px;
   }
 }
+
+.video__decoration {
+  fill: @light-black;
+
+  &:hover {
+    fill: @dark-black;
+  }
+
+  &:active {
+    fill: @dark-black;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    fill: @basic-white;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
