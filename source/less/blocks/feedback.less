@@ -65,15 +65,15 @@
   }
 
   &--contacts {
-    padding-top: 13px;
+    padding-top: 19px;
 
     @media (min-width: @tablet-width) {
-      padding-top: 45px;
+      padding-top: 47px;
     }
   }
 
   &--emotion {
-    padding-top: 33px;
+    padding-top: 29px;
 
     @media (min-width: @tablet-width) {
       order: -1;
@@ -88,10 +88,14 @@
   }
 
   &--visited {
-    padding-top: 35px;
+    padding-top: 18px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 36px;
+    }
 
     @media (min-width: @desktop-width) {
-      padding-top: 37px;
+      padding-top: 32px;
     }
   }
 
@@ -118,6 +122,17 @@
   @media (min-width: @desktop-width) {
     margin-right: 12px;
     margin-left: 37px;
+  }
+
+  &--emotion {
+    @media (min-width: @tablet-width) {
+      margin-right: 0px;
+      margin-left: 33px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 37px;
+    }
   }
 
   &--phone {
@@ -147,6 +162,7 @@
 
   &--mail {
     margin-right: 99px;
+    margin-bottom: 4px;
 
     @media (min-width: @tablet-width) {
       margin-right: 65px;
@@ -255,7 +271,7 @@
 
   &--personal {
     @media (min-width: @tablet-width) {
-      margin: 0 0 28px -21px;
+      margin: 0 0 29px -21px;
     }
 
     @media (min-width: @desktop-width) {
@@ -285,12 +301,14 @@
   }
 
   &--visited {
+    @media (min-width: @tablet-width) {
     margin-bottom: 37px;
     margin-right: 221px;
     width: 308px;
+    }
 
     @media (min-width: @desktop-width) {
-      margin-right: 478px;
+      margin-right: 326px;
     }
   }
 
@@ -308,7 +326,7 @@
 .feedback__input-text {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   width: 288px;
 
   @media (min-width: @tablet-width) {
@@ -492,10 +510,6 @@
     flex-wrap: wrap;
     margin: 0 94px;
   }
-
-  @media (min-width: @desktop-width) {
-    flex-wrap: nowrap;
-  }
 }
 
 .feedback__review {
@@ -513,8 +527,8 @@
 }
 
 .feedback__submit {
-  margin-top: 16px;
-  margin-bottom: 58px;
+  margin-top: 22px;
+  margin-bottom: 54px;
 
   @media (min-width: @tablet-width) {
     display: flex;
