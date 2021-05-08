@@ -15,6 +15,10 @@
       box-shadow: none;
     }
   }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .main-nav__item {
@@ -70,6 +74,22 @@
 
     @media (min-width: @tablet-width) {
       background-color: @basic-white;
+    }
+  }
+
+  &--current {
+    @media (min-width: @tablet-width) {
+      a {
+        color: @grey-current;
+
+        &:hover {
+          color: @grey-current-dark;
+        }
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
     }
   }
 }

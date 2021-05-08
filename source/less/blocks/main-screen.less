@@ -19,10 +19,14 @@
     height: 157px;
     background-position: center bottom, bottom;
     background-size: auto auto;
-    margin-top: 0px;
+    margin-top: 0;
 
     @media (min-width: @tablet-width) {
       height: 290px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 302px;
     }
   }
 }
@@ -43,7 +47,7 @@
 }
 
 .main-screen__description {
-  margin-top: 100px;
+  margin-top: 98px;
   padding-top: 14px;
 
   @media (min-width: @tablet-width) {
@@ -52,6 +56,26 @@
 
   &--form {
     margin-top: 84px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 156px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 207px;
+    }
+  }
+
+  &--catalog {
+    margin-top: 79px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 158px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 195px;
+    }
   }
 }
 
