@@ -36,7 +36,11 @@
           </div>
         </nav>
         <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Логотип">
+          </picture>
         </a>
         <div class="page-header__menu-bar">
           <button class="page-header__toggle" type="button" aria-label="Открыть меню">
@@ -74,7 +78,11 @@
                 Седона не атракцион для туристов, там течет своя жизнь
               </p>
             </div>
-            <img class="fact__image" width="520" height="260" src="img/photo-city.jpg" alt="Фото города">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="fact__image" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Фото города">
+            </picture>
           </div>
         </section>
         <section class="advantages">
@@ -111,7 +119,11 @@
                 Да! По нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
-            <img class="fact__img" src="img/photo-bridge.jpg" width="520" height="260" alt="Фото моста">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="fact__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото моста">
+            </picture>
           </div>
         </section>
         <section class="facts">
@@ -163,6 +175,9 @@
           <a class="hotel-search__button button" href="#" aria-label="Найти гостиницу">Найти гостиницу</a>
         </section>
         <section class="map">
+          <div class="map__frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505943266!2d-111.83015781523069!3d34.85437338108446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1620491850140!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
           <img class="map__img" src="img/map.png" width="320" height="350" alt="Изображение карты">
         </section  >
       </main>

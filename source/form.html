@@ -36,7 +36,11 @@
           </div>
         </nav>
         <a class="page-header__logo" href="index.html">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Логотип">
+          </picture>
         </a>
         <div class="page-header__menu-bar">
           <button class="page-header__toggle" type="button" aria-label="Открыть меню">
