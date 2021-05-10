@@ -1,6 +1,27 @@
 .developer {
+  display: flex;
+}
+
+.developer__image {
+  margin-top: 39px;
+  margin-left: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -23px;
+  }
+
+  &:hover {
+    fill: @light-blue;
+  }
+
+  &:active {
+    fill: @basic-black;
+    opacity: 0.3;
+  }
+}
+
+.developer__text {
   display: block;
-  position: relative;
   text-decoration: none;
   line-height: 26px;
   color: @basic-black;
@@ -9,22 +30,6 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    margin-bottom: 27px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/htmlacademy-footer.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 27px;
-    height: 34px;
-    right: 95px;
-    bottom: -4px;
-
-    @media (min-width: @tablet-width) {
-      right: -39px;
-    }
+    margin-top: -20px;
   }
 }
