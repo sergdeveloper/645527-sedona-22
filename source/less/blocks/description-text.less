@@ -1,0 +1,140 @@
+.description-text {
+  text-transform: uppercase;
+  text-align: center;
+
+  &--popup {
+    background-color: @basic-white;
+    padding-top: 20px;
+    padding-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      background-color: @basic-white;
+    }
+  }
+}
+
+.description-text__heading {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin: 0 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 11px 91px;
+  }
+
+  &--main {
+    margin-left: 23px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 109px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 9px 294px;
+    }
+  }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
+  }
+
+  &--hotel {
+    font-size: 21px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+    }
+  }
+
+  &--popup {
+    margin-top: 30px;
+    background-color: @basic-white;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
+  }
+
+  &--fail {
+    @media (min-width: @tablet-width) {
+      line-height: 40px;
+    }
+  }
+}
+
+.description-text__content {
+  font-size: 14px;
+  line-height: 26px;
+  color: @dark-black;
+  margin: 30px 20px;
+
+  &--form {
+    line-height: 24px;
+    margin: 28px 20px;
+
+    @media (min-width: @tablet-width) {
+      margin: 33px 163px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 33px 380px;
+    }
+  }
+
+  &--hotel {
+    line-height: 24px;
+    margin: 21px 18px 29px 18px;
+
+    @media (min-width: @tablet-width) {
+      margin: 32px 0 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 33px;
+      margin-bottom: 44px;
+      margin-left: 0;
+    }
+
+    br {
+      display: none;
+
+      @media (min-width: @tablet-width) {
+        display: block;
+      }
+    }
+  }
+
+  &--video {
+    margin: 28px 23px;
+
+    @media (min-width: @tablet-width) {
+      margin: 32px 23px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 32px 37px;
+    }
+  }
+
+  &--popup {
+    margin: 30px 41px 4px 30px;
+    line-height: 24px;
+
+    @media (min-width: @tablet-width) {
+      margin: 30px 120px 23px 102px;
+    }
+  }
+
+  &--fail {
+    margin: 30px 41px 35px 30px;
+  }
+}

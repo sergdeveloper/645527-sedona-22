@@ -1,0 +1,56 @@
+.button {
+  display: block;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Pt sans", "Arial", sans-serif;
+  font-display: swap;
+  background-color: @light-blue;
+  color: @basic-white;
+  padding: 15px 32px 15px 32px;
+  margin: 0 auto;
+  text-align: center;
+  width: 280px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    padding: 17px 46px 15px 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 480px;
+    padding: 16px 29px 15px 32px;
+  }
+
+  &:hover {
+    background-color: @basic-blue;
+  }
+
+  &:active {
+    background-color: @dark-blue;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: @basic-grey;
+  }
+
+  &--ok {
+    width: 180px;
+    font-size: 18px;
+    margin-bottom: 6%;
+  }
+
+  &--close-popup {
+    font-size: 18px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+    @media (min-width: @tablet-width) {
+      font-size: 21px;
+    }
+  }
+}

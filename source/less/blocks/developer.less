@@ -1,0 +1,35 @@
+.developer {
+  display: flex;
+}
+
+.developer__image {
+  margin-top: 39px;
+  margin-left: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -23px;
+  }
+
+  &:hover {
+    fill: @light-blue;
+  }
+
+  &:active {
+    fill: @basic-black;
+    opacity: 0.3;
+  }
+}
+
+.developer__text {
+  display: block;
+  text-decoration: none;
+  line-height: 26px;
+  color: @basic-black;
+  margin-top: 44px;
+  margin-left: 96px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: -20px;
+  }
+}
