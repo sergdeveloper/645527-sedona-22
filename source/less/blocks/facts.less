@@ -1,0 +1,26 @@
+.facts {
+  background-color: @special-grey;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.facts__list {
+  .clear-list;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    padding: 0 71px;
+  }
+}
+
+.facts__item {
+  @media (min-width: @desktop-width) {
+    width: 256px;
+  }
+}

@@ -1,0 +1,30 @@
+.popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: @basic-white;
+  box-shadow: 0 4px 4px 2px @wrapper-shadow;
+  z-index: 4;
+  text-align: center;
+
+  &--success {
+    display: none;
+    transform: translate(-50%, -50%);
+    background-color: @basic-grey;
+
+    @media (min-width: @tablet-width) {
+      width: 640px;
+    }
+  }
+
+  &--fail {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      width: 400px;
+    }
+  }
+}
