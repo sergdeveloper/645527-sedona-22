@@ -18,6 +18,14 @@ const sync = require("browser-sync").create();
 
 const styles = () => {
   return gulp.src("source/less/style.less")
+    .pipe(less())
+    .pipe(gulp.dest("build/css"))
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream())
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
