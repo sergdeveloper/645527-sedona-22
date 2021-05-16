@@ -144,24 +144,28 @@
 
 .photos__like {
   padding: 0;
+  margin-right: 14px;
   background: none;
   border: transparent;
   cursor: pointer;
+
+  @media (min-width: @tablet-width){
+    margin-right: 9px;
+  }
 }
 
 .photos__wrapper-like {
   display: flex;
   width: 61px;
-  justify-content: space-between;
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    margin-right: 27px;
+    margin-right: 23px;
     margin-top: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 29px;
+    margin-right: 24px;
     margin-top: 2px;
   }
 }

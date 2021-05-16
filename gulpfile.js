@@ -21,7 +21,6 @@ const styles = () => {
     .pipe(less())
     .pipe(gulp.dest("build/css"))
     .pipe(plumber())
-    .pipe(sourcemap.init())
     .pipe(less())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
