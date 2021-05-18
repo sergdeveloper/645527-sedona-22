@@ -89,7 +89,7 @@
                   <span class="photos__author">Автор фото: Борис</span>
                 </div>
                 <div class="photos__wrapper-like">
-                  <button class="photos__like">
+                  <button class="photos__like" aria-label="Кнопка Лайк">
                     <svg class="photos__like-image" width="23" height="21">
                       <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
@@ -113,7 +113,7 @@
                   <span class="photos__author">Автор фото: Сергей</span>
                 </div>
                 <div class="photos__wrapper-like">
-                  <button class="photos__like">
+                  <button class="photos__like" aria-label="Кнопка Лайк">
                     <svg class="photos__like-image" width="23" height="21">
                       <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
@@ -137,7 +137,7 @@
                   <span class="photos__author">Автор фото: Петр</span>
                 </div>
                 <div class="photos__wrapper-like">
-                  <button class="photos__like">
+                  <button class="photos__like" aria-label="Кнопка Лайк">
                     <svg class="photos__like-image" width="23" height="21">
                       <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
@@ -161,7 +161,7 @@
                   <span class="photos__author">Автор фото: Антон</span>
                 </div>
                 <div class="photos__wrapper-like">
-                  <button class="photos__like">
+                  <button class="photos__like" aria-label="Кнопка Лайк">
                     <svg class="photos__like-image" width="23" height="21">
                       <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
@@ -195,25 +195,23 @@
             </div>
             <div class="video__controls">
               <div class="video__timeline">
-                <svg class="video__slider" width="11" height="11">
-                  <use xlink:href="img/sprite.svg#time-change"></use>
-                </svg>
-                <svg class="video__scale" width="235" height="3">
-                  <use xlink:href="img/sprite.svg#timescale"></use>
+                <button class="video__slider" aria-label="Ползунок шкалы"></button>
+                <svg class="video__volume video__volume--scale" aria-label="Временная шкала">
+                  <use xlink:href="img/sprite.svg#volume-scale"></use>
                 </svg>
               </div>
               <div class="video__buttons">
                 <button class="video__button video__button--replay">
-                  <svg class="video__decoration" width="16" height="20">
+                  <svg class="video__decoration" width="16" height="20" aria-label="Повтор">
                     <use xlink:href="img/sprite.svg#replay"></use>
                   </svg>
                 </button>
-                <button class="video__button video__button--subtitles">
+                <button class="video__button video__button--subtitles" aria-label="Субтитры">
                   <svg class="video__decoration" width="32" height="20">
                     <use xlink:href="img/sprite.svg#subtitles"></use>
                   </svg>
                 </button>
-                <button class="video__button video__button--fullscreen">
+                <button class="video__button video__button--fullscreen" aria-label="На весь экран">
                   <svg class="video__decoration" width="20" height="20">
                     <use xlink:href="img/sprite.svg#fullscreen"></use>
                   </svg>
@@ -228,21 +226,21 @@
         <span class="hashtag">#visitsedona</span>
         <ul class="social-list">
           <li class="social-list__item">
-            <a class="social-list__button" href="#">
+            <a class="social-list__button" href="#" aria-label="Twitter">
               <svg width="18" height="15">
                 <use xlink:href="img/sprite.svg#twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__button" href="#">
+            <a class="social-list__button" href="#" aria-label="Facebook">
               <svg width="9" height="19">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__button" href="#">
+            <a class="social-list__button" href="#" aria-label="Youtube">
               <svg width="20" height="14">
                 <use xlink:href="img/sprite.svg#youtube"></use>
               </svg>
