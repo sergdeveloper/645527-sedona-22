@@ -46,4 +46,12 @@
     <path class="video__decoration" d="M17 0H14V3H17V6H20V3V0H17Z"/>
     <path class="video__decoration" d="M17 17H14V20H17H20V17V14H17V17Z"/>
   </symbol>
+
+  <symbol viewBox="0 0 11 11" id="time-change">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.49394 0.946971C7.99768 0.946971 10.0273 2.97651 10.0273 5.48021C10.0273 7.98394 7.99768 10.0136 5.49394 10.0136C2.99028 10.0136 0.960634 7.98394 0.960634 5.48021C0.960634 2.97651 2.99028 0.946971 5.49394 0.946971Z"/>
+  </symbol>
+
+  <symbol viewBox="0 0 235 3" id="timescale">
+    <rect  width="235" height="3"/>
+  </symbol>
 </svg>
